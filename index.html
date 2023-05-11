@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programadores</title>
+    <style>
+        :root {
+            --tamanho-fonte-padrao: 24px;
+        }
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: var(--tamanho-fonte-padrao);
+        }
+        input, button {
+            font-size: var(--tamanho-fonte-padrao);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="arroba" placeholder="digite um @...">
+        <button id="botao">Buscar</button>
+    </div>
+    <img src="cartoon-snail-loading-loading-gif-animation_2734139.png!bw700" alt="Imagem de um programador" id="foto">
+    <div id="mensagem">carregando...</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
