@@ -12,13 +12,13 @@ const buscar = async (event) => {
     
     if (!resposta.ok) {
         espacoMensagem.innerHTML = "programador não encontrado";
-        espacoFoto.src = "carregando.png";
+        espacoFoto.src = "cartoon-snail-loading-loading-gif-animation_2734139.png!bw700";
     return;
     }
 
     const resultado = await resposta.json();
     espacoMensagem.innerHTML = resultado.bio || resultado.name;
-    espacoFoto.src = resultado.avatar_url || "carregando.png";
+    espacoFoto.src = resultado.avatar_url || "cartoon-snail-loading-loading-gif-animation_2734139.png!bw700";
 };
 
 document.addEventListener('DOMContentLoaded', iniciar);
